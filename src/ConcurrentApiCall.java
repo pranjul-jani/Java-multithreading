@@ -26,9 +26,12 @@ public class ConcurrentApiCall {
                 .map(CompletableFuture::runAsync)
                 .toArray(CompletableFuture[]::new);
 
+
         // if the purpose of adding join is that
         // unless this task is completed the task below it won't be executed
         CompletableFuture.allOf(completableFutures).join();
         System.out.println(map);
     }
+
+
 }
