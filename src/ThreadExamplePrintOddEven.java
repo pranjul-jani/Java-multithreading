@@ -1,6 +1,6 @@
 import java.util.concurrent.Semaphore;
 
-public class ThreadExampleThreePrintOddEven {
+public class ThreadExamplePrintOddEven {
 
     /*
     A semaphore allows access to a shared resource
