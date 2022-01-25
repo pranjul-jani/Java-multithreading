@@ -3,7 +3,7 @@ import java.util.concurrent.Executors;
 
 public class ExecutorServiceExample {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // create pool
         ExecutorService service = Executors.newFixedThreadPool(10);
@@ -12,8 +12,7 @@ public class ExecutorServiceExample {
         for(int i=0;i<100;i++) {
             service.execute(new Task());
         }
-
-        System.out.println(" Thread name -> " + Thread.currentThread().getName());
+        System.out.println(" Thread name -> " + Thread.currentThread().getName() + "++");
 
     }
 

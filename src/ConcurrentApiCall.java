@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -31,6 +28,7 @@ public class ConcurrentApiCall {
         // unless this task is completed the task below it won't be executed
         CompletableFuture.allOf(completableFutures).join();
         System.out.println(map);
+
     }
 
 
