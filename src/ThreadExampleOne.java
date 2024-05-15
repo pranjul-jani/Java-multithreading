@@ -26,7 +26,7 @@ class B extends Thread{
 
 class Table{
     synchronized void printTable(int n){//synchronized method
-        for(int i=1;i<=5;i++){
+        for(int i=1;i<=10;i++){
             System.out.println(n*i);
             try{
                 Thread.sleep(400);
@@ -54,7 +54,7 @@ class MyThread2 extends Thread{
         this.t=t;
     }
     public void run(){
-        t.printTable(100);
+        t.printTable(17);
     }
 }
 
